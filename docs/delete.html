@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Excluir Conta — PushPass</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: #f5f7fa;
+      color: #1a2535;
+      line-height: 1.7;
+    }
+
+    header {
+      background: #0E1B2B;
+      color: #fff;
+      padding: 40px 24px 32px;
+      text-align: center;
+    }
+
+    header h1 { font-size: 2rem; font-weight: 700; }
+    header p { margin-top: 8px; color: #8B9AA7; font-size: 0.95rem; }
+
+    main {
+      max-width: 620px;
+      margin: 40px auto;
+      padding: 0 20px 60px;
+    }
+
+    .card {
+      background: #fff;
+      border-radius: 16px;
+      border: 1px solid #e2e8f0;
+      padding: 32px;
+      margin-bottom: 24px;
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 700;
+      color: #0E1B2B;
+      margin-bottom: 14px;
+    }
+
+    p { color: #4a5568; margin-bottom: 10px; }
+    p:last-child { margin-bottom: 0; }
+
+    ul {
+      color: #4a5568;
+      padding-left: 20px;
+      margin-bottom: 10px;
+    }
+    ul li { margin-bottom: 6px; }
+
+    .warning {
+      background: #fff7ed;
+      border-left: 4px solid #f97316;
+      padding: 14px 16px;
+      border-radius: 0 8px 8px 0;
+      color: #9a3412;
+      font-size: 0.92rem;
+      margin: 16px 0;
+    }
+
+    .btn {
+      display: inline-block;
+      margin-top: 20px;
+      background: #0E1B2B;
+      color: #fff;
+      padding: 14px 28px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      text-align: center;
+      width: 100%;
+    }
+
+    .btn:hover { background: #1a2f4a; }
+
+    .btn-outline {
+      display: inline-block;
+      margin-top: 12px;
+      background: transparent;
+      color: #0E1B2B;
+      padding: 13px 28px;
+      border-radius: 12px;
+      text-decoration: none;
+      font-weight: 600;
+      font-size: 1rem;
+      text-align: center;
+      width: 100%;
+      border: 2px solid #0E1B2B;
+    }
+
+    .btn-outline:hover { background: #f1f5f9; }
+
+    .steps {
+      counter-reset: steps;
+      list-style: none;
+      padding: 0;
+    }
+
+    .steps li {
+      counter-increment: steps;
+      display: flex;
+      gap: 14px;
+      margin-bottom: 16px;
+      align-items: flex-start;
+    }
+
+    .steps li::before {
+      content: counter(steps);
+      background: #0E1B2B;
+      color: white;
+      width: 28px;
+      height: 28px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    footer {
+      text-align: center;
+      color: #8B9AA7;
+      font-size: 0.82rem;
+      padding-bottom: 40px;
+    }
+
+    a.link { color: #3b82f6; }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>PushPass</h1>
+  <p>Exclusão de Conta e Dados</p>
+</header>
+
+<main>
+
+  <div class="card">
+    <h2>🗑️ Solicitar exclusão da conta</h2>
+    <p>
+      Você pode solicitar a exclusão completa da sua conta e de todos os seus dados pessoais a qualquer momento. Atendemos todas as solicitações em até <strong>30 dias</strong>.
+    </p>
+
+    <div class="warning">
+      ⚠️ <strong>Atenção:</strong> a exclusão é permanente e irreversível. Todo o histórico de exercícios, saldo de tempo e configurações serão apagados definitivamente.
+    </div>
+
+    <p><strong>O que será excluído:</strong></p>
+    <ul>
+      <li>Conta e dados de autenticação (e-mail / Apple ID)</li>
+      <li>Histórico de exercícios e repetições</li>
+      <li>Saldo de tempo ganho</li>
+      <li>Lista de apps selecionados para bloqueio</li>
+      <li>Dados de assinatura vinculados à conta</li>
+    </ul>
+
+    <p><strong>O que NÃO será excluído por nós:</strong></p>
+    <ul>
+      <li>Dados de cobrança mantidos pela Apple ou Google (gerenciados por eles)</li>
+    </ul>
+  </div>
+
+  <div class="card">
+    <h2>📧 Como solicitar</h2>
+
+    <p>Envie um e-mail para a gente com o assunto <strong>"Excluir minha conta"</strong> a partir do e-mail cadastrado no PushPass:</p>
+
+    <a class="btn" href="mailto:suporte@pushpass.app?subject=Excluir%20minha%20conta&body=Ol%C3%A1%2C%20gostaria%20de%20solicitar%20a%20exclus%C3%A3o%20completa%20da%20minha%20conta%20e%20de%20todos%20os%20meus%20dados%20no%20PushPass.">
+      📨 Enviar e-mail de exclusão
+    </a>
+
+    <a class="btn-outline" href="mailto:suporte@pushpass.app">
+      suporte@pushpass.app
+    </a>
+  </div>
+
+  <div class="card">
+    <h2>📋 O que acontece depois</h2>
+    <ol class="steps">
+      <li>Você envia o e-mail de solicitação</li>
+      <li>Recebemos e confirmamos sua identidade em até 48h</li>
+      <li>Excluímos todos os seus dados do nosso banco em até 30 dias</li>
+      <li>Você recebe um e-mail de confirmação da exclusão</li>
+    </ol>
+  </div>
+
+  <div class="card">
+    <h2>📱 Cancelar assinatura</h2>
+    <p>
+      A exclusão da conta <strong>não cancela automaticamente</strong> sua assinatura. Para cancelar o plano, acesse:
+    </p>
+    <ul>
+      <li><strong>iPhone:</strong> Ajustes → seu nome → Assinaturas → PushPass → Cancelar</li>
+      <li><strong>Android:</strong> Play Store → foto do perfil → Pagamentos → Assinaturas → PushPass → Cancelar</li>
+    </ul>
+  </div>
+
+  <p style="text-align:center; color:#8B9AA7; font-size:0.85rem; margin-top:8px;">
+    <a class="link" href="index.html">← Voltar para a Política de Privacidade</a>
+  </p>
+
+</main>
+
+<footer>
+  © 2026 PushPass. Todos os direitos reservados.
+</footer>
+
+</body>
+</html>
